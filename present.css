@@ -1,0 +1,758 @@
+:root   {
+    --quart: 25%;
+    --demi: 50%;
+    --larg: 100%
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    margin: 0;
+}
+.fin {
+    background-color: #a4286a;
+    font-size: 20pt;
+    color: white;
+    padding: 5px 0;
+}
+.section3 h1 {
+    font-size: 30pt;
+    color: #a4286a;
+    width:100%;
+}
+.znimg {
+    text-align: center;
+}
+.getfree {
+    padding: 30px;
+}
+.getfree h1 {
+    font-size: 30pt;
+    color: #a4286a;
+}
+.getfree ul {
+    font-size: 14pt;
+}
+.getfree ul li {
+    list-style-type: square;
+}
+.finzone {
+    width: 90%;
+    text-align: center;
+}
+.privacy {
+    font-size: 8pt;
+}
+#getfree2{
+    border: solid #a4286a 1px;
+    width: 400px;
+    padding: 10px;
+    font-size: 18pt;
+}
+.butform {
+    font-size: 18pt;
+    padding: 10px;
+    background-color: #fec228;
+    border-radius: 10px;
+}
+.section3 {
+    padding: 30px;
+}
+.section2 {
+    padding: 30px;
+    background-color: #f4f1f4;
+}
+.section2 a {
+    font-size: 18pt;
+    color: #a4286a;
+    text-decoration: none;
+}
+.section2 a:hover {
+    text-decoration: underline;
+}
+.section2 h1 {
+    width: 100%;
+}
+.zn100 {
+    width: 100%;
+}
+.zn100 a {
+    font-size: 30pt;
+    color: #a4286a;
+    text-decoration: none;
+}
+.pl4a a {
+    font-size: 20pt;
+    color: #a4286a;
+    text-decoration: none;
+}
+.pl4a:hover {
+    text-decoration: underline;
+}
+.zn100 a:hover {
+    text-decoration: underline;
+}
+.navfoo {
+    display: flex;
+    flex-wrap: wrap;
+    /*padding: 10px;*/
+    justify-content: space-evenly;
+}
+.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.znplug3 a {
+    font-size: 20pt;
+    color: #a4286a;
+}
+.znplug3 p {
+    font-size: 14pt;
+    display: block;
+}
+.znplug3 {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 12pt;
+    width: 22%;
+    /*max-width: 22%;*/
+    min-width: 250px;
+}
+.znplug4 {
+    text-align: left;
+    font-size: 14pt;
+    color: #a4286a;
+    max-width: 22%;    
+}
+.znfleche {
+    display: flex;
+    justify-content: space-evenly;
+}
+.znplug4 img {
+    text-align: right;
+}
+.pl4a {
+    text-align: left;
+    font-size: 18pt;
+    font-weight: bolder;
+    color: #a4286a;
+    max-width: 22%;
+    text-decoration: none;
+}
+.znplug {
+    font-size: 12pt;
+    text-align: center;
+    display: inline-block;
+    width  :20%;
+    min-width: 250px;
+}
+.lia {
+    font-size: 16pt;
+    color: #a4286a;
+    text-decoration: none;
+}
+.lia:hover {
+    text-decoration: underline;
+}
+.znplug img:hover {
+    cursor: pointer;
+}
+.section1 {
+    padding: 30px;
+}
+.section1 a {
+    font-size: 30pt;
+    color: #a4286a;
+    text-decoration: none;
+}
+.section1 a:hover {
+    text-decoration: underline;
+}
+.section1 h1 {
+    font-size: 30pt;
+}
+.Articles {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-evenly;
+    text-align: left;
+    font-size: x-large;
+}
+.znarticle a {
+    font-size: 20pt;
+    color: #a4286a;
+    text-decoration: none;
+}
+.znarticle p {
+    font-size: 16pt;
+}
+.znarticle a:hover {
+    text-decoration: underline;
+}
+.txtzn {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: calc(95% - 131px);
+}
+.imgzn {
+    padding: 0;
+    margin: 0;
+}
+.znarticle {
+    background-color: white;
+    padding-top: 5px;
+    border: solid white 2px;
+    border-style: groove;
+    border-radius: 6px;
+    max-width: 250px;
+}
+.lookfor form {
+    width: 100%;
+}
+.lookfor {
+    display: inline-flex;
+    width:100%;
+    padding: 30px;  
+    background-color: whitesmoke;
+}
+#lookfor2 {
+    font-size: 22pt;
+    border: outset silver 4px;
+    width: 50%;
+    padding: 5px;
+    color: lightslategray;
+}
+.hero {
+    background-image: url("./Images/hero.webp");
+    /*background-size: contain;*/
+    background-clip: padding-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navhero {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 300px;
+    margin-bottom: 40px;
+}
+.choixhero {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid white 2px;
+    border-style: groove;
+    border-radius: 6px;
+    width: 25%;
+    text-align: left;
+    font-size: x-large;
+}
+.choixhero p {
+    margin:10px;
+}
+.bouton {
+    border: solid white 2px;
+    border-style: groove;
+    border-radius: 6px;
+    padding: 10px;
+}
+#bt1 {
+    background-color: orange ;
+    color: black;
+}
+#bt2 {
+    background-color: purple;
+    color: white;
+}
+#bt3 {
+    background-color: purple;
+    color: white;
+}
+.tete {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.imgtete {
+    width:35%;
+}
+.ultete {
+    display:inline-block;
+    width:65%;
+    object-position: right;
+}
+.ultete ul {
+    /*border: solid red 1px;*/
+    text-align: right;
+}
+.ultete ul li {
+    /*display: inline-flex;*/
+    flex-direction: row-reverse;
+    width: 20%;
+    justify-content: flex-start;
+}
+.ultete form {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    /*border: solid red 1px;*/
+}
+.promotion {
+    border: solid black 1px;
+    height: 30px;
+    justify-content: center;
+}
+.promotion p {
+    padding: 6px;
+    margin: 0;
+}
+.btcss {
+    display: flex;
+    width: 100%;
+    background-color: #4CAF50;
+    border-style: ridge;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-large;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+.btcssPost {
+    display: inline-flex;
+    width: 30%;
+    background-color: #a4286a;;
+    /*border-style: ridge;*/
+    color: #a4286a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-large;
+    cursor: pointer;
+    font-size: 23pt;
+    transition-duration: 0.1s;
+    background-image: url(./Images/LoupeTxt.PNG);
+    background-repeat: no-repeat;
+}
+.btcss:hover {
+    background-color: purple;
+    color: white;
+    transform: scale(1.15);
+}
+.menu1 {
+    width: 100%;
+}
+.btcss1 {
+    background-color: seagreen;
+}
+.btcss2 {
+    background-color: royalblue;
+}
+.btcss3 {
+    background-color: midnightblue;
+}
+.btcss4 {
+    background-color: crimson;
+}
+.btcss5 {
+    background-color: rgb(76, 19, 83);
+}
+.btcss6 {
+    background-color: limegreen;
+}
+.btcss7 {
+    background-color: darkorange;
+}
+
+/* Téléphone */
+@media screen and (max-width: 640px) {
+    /*----- Partie Header --------------*/    
+    .Txtyoast {
+        color: white;
+        text-align: left;
+        font-size: 20pt;
+        font-weight: bolder;
+        padding-left: 10px;
+        width:35%;
+    }
+    .imgtete {
+        display: none;
+    }
+    .SansBurger {
+        display: none;
+    }
+    .AvecBurger li {
+        display: inline-flex;
+    }
+    .menu1 {
+        display: none;
+    }
+    .tete {
+        background-color: #a4286a;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .ultete form {
+        display: none;
+    }
+    .promotion {
+        display: none;
+    }
+    /*----- zone Main / Hero ----------*/
+    .hero {
+        background-image: url(./Images/Hero.png);
+        background-position: top;
+        background-clip: border-box;
+        background-size: contain;
+    }
+    .navhero {
+        padding-top: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .choixhero {
+        display: inline-block;
+        width: 80%;
+        text-align: left;
+        font-size: 12pt;
+        margin-bottom: 20px;
+    }
+    .bouton {
+        text-align: center;
+    }
+    /*------ zone Main / lookFor -----*/
+    .lookfor {
+        padding: 10px;
+    }
+    #lookfor2 {
+        font-size: 12pt;
+        width: 75%;
+    }
+    .btcssPost {
+        background-image: url(./Images/Loupe.PNG);
+        font-size: 12pt;
+        background-size: contain;
+        width: 10%;
+    }
+    /*----- Section 1 --------*/
+    .section1 a {
+        font-size: 16pt;
+    }
+    .section1 h1 {
+        font-size: 16pt;
+    }
+    .section1 {
+        padding: 0 20px 10px 20px;
+    }
+    .znarticle {
+        max-width: 300px;
+    }
+    .txtzn a {
+        font-size: 14pt;
+    }
+    .txtzn p {
+        font-size: 12pt;
+    }
+    .imgzn {
+        display: none;
+    }
+    /*----- Section 2 --------*/
+    .section2 {
+        padding: 10px;
+    }
+    .zn100 a {
+        font-size: 20pt;
+    }
+    .znplug {
+        margin-bottom: 5px;
+    }
+    /*----- footer --------*/
+    .getfree {
+        padding: 10px;
+    }
+    .getfree form {
+        text-align: center;
+    }
+    .getfree h1 {
+        font-size: 18pt;
+    }
+    .getfree ul {
+        display: none;
+    }
+    #getfree2 {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .butform {
+        font-size: 14pt;
+    }
+    /*----- Section 3 - 1 --------*/
+    .section3 {
+        padding: 10px;
+    }
+    .section3 h1 {
+        font-size: 20pt;
+    }
+    .znplug3 {
+        min-width: 320px;
+    }
+    .znplug3 p {
+        text-align: left;
+        font-size: 12pt;
+    }
+    .znplug3 a {
+        font-size: 14pt;
+    }
+    /*----- Section 3 - 2 --------*/
+    .znplug4 {
+        max-width: inherit;
+        width: 90%;
+    }
+    .znfleche {
+        display: flex;
+        justify-content: space-between;
+    }
+    .znplug4 ul {
+        display: none;
+    }
+    .pl4a {
+        font-size: 16pt;
+        max-width: 80%;
+    }
+    .lia {
+        font-size: 12pt;
+    }
+    /*------- zone Fin ------*/
+    .fin {
+        font-size: 16pt;
+        padding: 5px;
+    }
+    .fin p {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+}
+/* Tablette */
+@media screen and (max-width: 900px) and (min-width:640px) {
+    .Txtyoast {
+        color: white;
+        text-align: left;
+        font-size: 30pt;
+        font-weight: bolder;
+        padding-left: 10px;
+        width:70%;
+        margin: 0;
+    }
+    .imgtete {
+        display: none;
+    }
+    .SansBurger {
+        display: none;
+    }
+    .AvecBurger {
+        margin:0;
+    }
+    .AvecBurger li {
+        display: inline-flex;
+        margin: 0;
+    }
+    .menu1 {
+        display: none;
+    }
+    .tete {
+        background-color: #a4286a;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .ultete form {
+        display: none;
+    }
+    .promotion {
+        display: none;
+    }
+    /*----- zone Main / Hero ----------*/
+    .hero {
+        background-image: url(./Images/Hero.png);
+        background-position: top;
+        background-clip: border-box;
+        background-size: contain;
+    }
+    .navhero {
+        padding-top: 180px 20px 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        justify-content: left;
+   }
+    .choixhero {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        font-size: 12pt;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .bouton {
+        text-align: center;
+    }
+    /*------ zone Main / lookFor -----*/
+    .lookfor {
+        padding: 10px;
+    }
+    #lookfor2 {
+        font-size: 12pt;
+        width: 85%;
+    }
+    .btcssPost {
+        background-image: url(./Images/Loupe.PNG);
+        font-size: 12pt;
+        background-size: contain;
+        width: 5%;
+    }
+    /*----- Section 1 --------*/
+    .section1 a {
+        font-size: 16pt;
+    }
+    .section1 h1 {
+        font-size: 16pt;
+    }
+    .section1 {
+        padding: 0 20px 10px 20px;
+    }
+    .znarticle {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .txtzn a {
+        font-size: 14pt;
+    }
+    .txtzn p {
+        font-size: 12pt;
+    }
+    .imgzn {
+        display: none;
+    }
+    /*----- Section 2 --------*/
+    .section2 {
+        padding: 10px;
+    }
+    .zn100 a {
+        font-size: 20pt;
+    }
+    .znplug {
+        margin-bottom: 5px;
+    }
+    /*----- footer --------*/
+    .getfree {
+        padding: 10px;
+    }
+    .getfree form {
+        text-align: center;
+    }
+    .getfree h1 {
+        font-size: 18pt;
+    }
+    .getfree ul {
+        display: none;
+    }
+    #getfree2 {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .butform {
+        font-size: 14pt;
+    }
+    /*----- Section 3 - 1 --------*/
+    .section3 {
+        padding: 10px;
+    }
+    .section3 h1 {
+        font-size: 20pt;
+    }
+    .znplug3 {
+        min-width: 320px;
+    }
+    .znplug3 p {
+        text-align: left;
+        font-size: 12pt;
+    }
+    .znplug3 a {
+        font-size: 14pt;
+    }
+    /*----- Section 3 - 2 --------*/
+    .znplug4 {
+        max-width: inherit;
+        width: 90%;
+    }
+    .znfleche {
+        display: flex;
+        justify-content: space-between;
+    }
+    .znplug4 ul {
+        display: none;
+    }
+    .pl4a {
+        font-size: 16pt;
+        max-width: 80%;
+    }
+    .lia {
+        font-size: 12pt;
+    }
+    /*------- zone Fin ------*/
+    .fin {
+        font-size: 20pt;
+        padding: 20px;
+    }
+    .fin p {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+/* Ecran */
+@media screen and (min-width:900px) {
+    .Txtyoast {
+        display: none;
+    }
+    .SansBurger li {
+        display: inline-flex;
+    }
+    .AvecBurger {
+        display: none;
+    }
+   .menu1 {
+        display: inline-flex;
+    }
+    .promotion {
+        display: none;
+    }
+    .znfleche {
+        display: block;
+    }
+    .znfleche img {
+        display: none;
+    }
+}
