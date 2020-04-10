@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="present.css">
     <script src="https://kit.fontawesome.com/2bbe852980.js" crossorigin="anonymous"></script>    
 </head>
-<body>
-    <header>
+<body id="body" onresize="changeMenu()">
+    <header id="header">
         <div class="tete">
             <div class="imgtete">
                 <img src="./Images/logo.svg" alt="">
@@ -31,7 +31,7 @@
                     <li><i class="fas fa-user"></i></li>
                     <li><i class="fas fa-cart-arrow-down"></i></li>
                     <li><i class="fas fa-search"></i></li>
-                    <li><i class="fas fa-align-justify"></i></li>
+                    <li><i id="burger" class="fas fa-align-justify"></i></li>
                 </ul>
                 <form name="mySearch" action="POST">
                     <input type="text" id="lookfor1" name="lookfor1">
@@ -42,7 +42,7 @@
         <div class="promotion">
             <p>Promotions</p>
         </div>
-        <nav class="menu1">
+        <nav id="menu1" class="menu1">
             <button class="btcss btcss1">Home</button>
             <button class="btcss btcss2">Yoast SEO</button>
             <button class="btcss btcss3">Other plugins</button>
@@ -200,7 +200,6 @@
                 <div class="znplug4">
                     <div class="znfleche">
                         <a class="pl4a" href="#">Home</a>
-                        <img class="imgfleche" src="./Images/fleche_bas.PNG" alt="">
                     </div>
                     <ul class="menufin">
                         <li><a class="lia" href="#">About us</a></li>
@@ -215,7 +214,6 @@
                 <div class="znplug4">
                     <div class="znfleche">
                         <a class="pl4a" href="#">WordPress plugins</a>
-                        <img src="./Images/fleche_bas.PNG" alt="">
                     </div>
                     <ul class="menufin">
                         <li><a class="lia" href="#">Yoast SEO</a></li>
@@ -229,7 +227,6 @@
                 <div class="znplug4">
                     <div class="znfleche">
                         <a class="pl4a" href="#">SEO blog</a>
-                        <img src="./Images/fleche_bas.PNG" alt="">
                     </div>                   
                     <ul class="menufin">
                         <li><a class="lia" href="#">SEO basics</a></li>
@@ -241,7 +238,6 @@
                 <div class="znplug4">
                     <div class="znfleche">
                         <a class="pl4a" href="#">Yoast SEO academy</a>
-                        <img src="./Images/fleche_bas.PNG" alt="">
                     </div>                   
                     <ul class="menufin">
                         <li><a class="lia" href="#">All courses</a></li>
@@ -263,5 +259,6 @@
             </div>
         </section>               
     </footer>
+    <script type="text/javascript" src="./present.js"></script>
 </body>
 </html>

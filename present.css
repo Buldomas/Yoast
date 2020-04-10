@@ -13,7 +13,10 @@ html {
       outline: none;
   }
 body {
-    margin: 0;
+    max-width: 1080px;
+    margin: auto;
+    overflow-x: hidden;
+
 }
 .fin {
     background-color: #a4286a;
@@ -300,7 +303,7 @@ body {
 
 .hero {
     display: block;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     /*background-image: url("./Images/hero.webp");
     /*background-size: contain;*/
@@ -310,17 +313,18 @@ body {
 }
 .divimghero {
     display: flex;
-    height: calc(480px/2);
+    height: 480px;
+    width: auto;
     text-align: center;
     align-self: center;
     justify-content: center;
     object-position: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .imghero {
     display: block;
-    width: calc(2424px / 2);
-    height: calc(480px / 2);
+    width: calc(2424px / 1.5);
+    height: calc(480px / 1.5);
 }
 .navhero {
     display: flex;
@@ -328,18 +332,19 @@ body {
     /*padding-top: 300px;*/
     margin-bottom: 10px;
     position: relative;
-    top: -60px;
+    top: -220px;
+    z-index: 99;
 }
 .choixhero {
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: solid gray 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid lightgrey 1px;
     border-style: solid;
     border-radius: 6px;
-    box-shadow: 2px 2px 4px grey;
+    box-shadow: 2px 2px 2px lightgrey;
     width: 30%;
     text-align: left;
     font-size: x-large;
@@ -353,6 +358,7 @@ body {
     border-radius: 6px;
     box-shadow: 2px 2px 2px lightgrey;
     padding: 10px;
+    cursor: pointer;
 }
 #bt1 {
     background-color: orange ;
@@ -415,6 +421,9 @@ body {
     color: white;
     font-size: 18pt;
 }
+.AvecBurger i {
+    cursor: pointer;
+}
 .ultete form {
     display: inline-block;
     width: 100%;
@@ -427,6 +436,7 @@ body {
     border-color:#a4286a;
     font-size: 12pt;
     padding: 5px;
+    cursor: pointer;
 }
 .btnSearch1 i {
     color: white;
@@ -469,7 +479,16 @@ body {
     transform: scale(1.15);
 }
 .menu1 {
-    width: 100%;
+    width: 100%;    
+}
+.menu1bis {
+    height: 0px;
+    position: relative;
+    top: 0;
+    width: 70%;
+    margin-left: 30%;
+    z-index: 999;
+
 }
 .btcss1 {background-color: seagreen;}
 .btcss2 {background-color: royalblue;}
@@ -519,9 +538,10 @@ body {
         background-position: top;
         background-clip: border-box;
         background-size: contain;*/
+        height: 650px;
     }
     .navhero {
-        padding-top: 120px;
+        padding-top: 20px;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0px;
@@ -564,7 +584,7 @@ body {
         padding: 0 20px 10px 20px;
     }
     .znarticle {
-        max-width: 300px;
+        width: 45%;
     }
     .txtzn a {
         font-size: 14pt;
@@ -584,6 +604,7 @@ body {
     }
     .znplug {
         margin-bottom: 5px;
+        width: 45%;
     }
     /*----- footer --------*/
     .getfree {
@@ -613,7 +634,7 @@ body {
         font-size: 20pt;
     }
     .znplug3 {
-        min-width: 320px;
+        width: 40%;
     }
     .znplug3 p {
         text-align: left;
@@ -625,14 +646,15 @@ body {
     /*----- Section 3 - 2 --------*/
     .znplug4 {
         max-width: inherit;
-        width: 90%;
+        width: 45%;
+
     }
     .znfleche {
         display: flex;
         justify-content: space-between;
     }
     .znplug4 ul {
-        display: none;
+        /*display: none;*/
     }
     .pl4a {
         font-size: 16pt;
@@ -643,7 +665,7 @@ body {
     }
     /*------- zone Fin ------*/
     .fin {
-        font-size: 16pt;
+        /*font-size: 16pt;*/
         padding: 5px;
     }
     .fin p {
@@ -692,10 +714,7 @@ body {
     }
     /*----- zone Main / Hero ----------*/
     .hero {
-        /*background-image: url(./Images/Hero.png);
-        background-position: top;
-        background-clip: border-box;
-        background-size: contain;*/
+        height: 500px;
     }
     .navhero {
         padding-top: 180px 20px 20px 20px;
@@ -805,14 +824,14 @@ body {
     /*----- Section 3 - 2 --------*/
     .znplug4 {
         max-width: inherit;
-        width: 90%;
+        width: 45%;
     }
     .znfleche {
         display: flex;
         justify-content: space-between;
     }
     .znplug4 ul {
-        display: none;
+        /*display: none;*/
     }
     .pl4a {
         font-size: 16pt;
@@ -845,6 +864,10 @@ body {
     }
    .menu1 {
         display: inline-flex;
+    }
+    .menu1bis {
+        /*width: 0px;*/
+        display: none;
     }
     .promotion {
         display: none;
