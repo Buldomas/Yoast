@@ -6,6 +6,7 @@
     <title>Yoast Test</title>
     <link rel="stylesheet" href="Nettoyage.css">
     <link rel="stylesheet" href="present.css">
+    <script src="https://kit.fontawesome.com/2bbe852980.js" crossorigin="anonymous"></script>    
 </head>
 <body>
     <header>
@@ -16,19 +17,25 @@
             <p class="Txtyoast">Yoast</p>
             <div class="ultete">
                 <ul class="SansBurger">
-                    <li>Login</li>
-                    <li>Cart</li>
-                    <li>EUR (€)</li>
+                    <li><i class="fas fa-user"> Login</i></li>
+                    <li><i class="fas fa-cart-arrow-down"> Cart</i></li>
+                    <li>
+                        <select name="monnaie" id="monnaie">
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR" selected>EUR (€)</option>
+                            <option value="GBP">GBP (&#163)</option>
+                        </select>
+                    </li>
                 </ul>
                 <ul class="AvecBurger">
-                    <li><img src="./Images/Login.PNG" alt=""></li>
-                    <li><img src="./Images/caddy.PNG" alt=""></li>
-                    <li><img src="./Images/Loupe.PNG" alt=""></li>
-                    <li><img src="./Images/sandwich.PNG" alt=""></li>
+                    <li><i class="fas fa-user"></i></li>
+                    <li><i class="fas fa-cart-arrow-down"></i></li>
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-align-justify"></i></li>
                 </ul>
-                <form action="#" method="get">
-                    <input type="text" id="lookfor" name="lookfor">
-                    <button type="submit">Envoi</button>
+                <form name="mySearch" action="POST">
+                    <input type="text" id="lookfor1" name="lookfor1">
+                    <button class="btnSearch1" type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
         </div>
@@ -47,6 +54,9 @@
     </header>
     <main>
         <div class="hero">
+            <div class="divimghero">
+                <img class="imghero" src="./Images/hero.webp" alt="">
+            </div>
             <nav class="navhero">
                 <div class="choixhero">
                     <p>Optimize your WordPress site.</p>
@@ -64,8 +74,8 @@
         </div>
         <div class="lookfor">
             <form action="#" method="get">
-                <input type="text" id="lookfor2" name="lookfor" value="Posez votre question ?">
-                <button class="btcssPost" type="submit">.</button>
+                <input type="text" id="lookfor2" name="lookfor" value="" placeholder="What are you looking for ?">
+                <button class="btcssPost" type="submit"><i class="fas fa-search"> Search</i></button>
             </form>
         </div>
         <section class="section1">
@@ -244,8 +254,12 @@
         </section>
         <section>
             <div class="fin">
-                <p>2003-2020 Yoast by MOA<br>Menu final
-                </p>
+                <p><span>2003-2020</span> Yoast by Moi</p>
+                <a href="#">Some rights reserved</a><span> | </span> 
+                <a href="#">policy</a><span> | </span>
+                <a href="#">Terms of service</a><span> | </span>
+                <a href="#">Refund policy</a><span> | </span>
+                <a href="#">Contact us</a>
             </div>
         </section>               
     </footer>

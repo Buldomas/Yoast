@@ -9,19 +9,33 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
+  *:focus {
+      outline: none;
+  }
 body {
     margin: 0;
 }
 .fin {
     background-color: #a4286a;
-    font-size: 20pt;
+    font-size: 14pt;
     color: white;
-    padding: 5px 0;
+    padding: 5px 0 15px 10px;
 }
-.section3 h1 {
-    font-size: 30pt;
-    color: #a4286a;
-    width:100%;
+.fin p {
+    margin: 2px;
+}
+.fin a {
+    color: white;
+    font-size: 14pt;
+    text-decoration: none;
+}
+.fin a:hover {
+    text-decoration: underline;
+}
+.fin span {
+    color: white;
+    font-size: 16pt;
+    font-weight: bolder;
 }
 .znimg {
     text-align: center;
@@ -61,14 +75,24 @@ body {
 .section3 {
     padding: 30px;
 }
+.section3 h1 {
+    font-size: 30pt;
+    color: #a4286a;
+    width:100%;
+}
+
 .section2 {
     padding: 30px;
     background-color: #f4f1f4;
+    text-align: left;
 }
 .section2 a {
-    font-size: 18pt;
+    font-size: 14pt;
     color: #a4286a;
     text-decoration: none;
+}
+.section2 p {
+    margin: 5px 0 10px 0;
 }
 .section2 a:hover {
     text-decoration: underline;
@@ -79,8 +103,15 @@ body {
 .zn100 {
     width: 100%;
 }
+.zn100 h1 {
+    font-size: 20pt;
+    font-weight: normal;
+    color: #a4286a;
+    text-decoration: none;
+}
 .zn100 a {
-    font-size: 30pt;
+    font-size: 20pt;
+    font-weight: normal;
     color: #a4286a;
     text-decoration: none;
 }
@@ -105,7 +136,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: left;
+    text-align: left;
 }
 .menu4 {
     display: flex;
@@ -115,21 +147,20 @@ body {
 }
 
 .znplug3 a {
-    font-size: 20pt;
+    font-size: 16pt;
     color: #a4286a;
 }
 .znplug3 p {
-    font-size: 14pt;
+    font-size: 12pt;
     display: block;
 }
 .znplug3 {
     display: inline-block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 12pt;
-    width: 22%;
-    /*max-width: 22%;*/
-    min-width: 250px;
+    width: 25%;
+    min-width: 200px;
 }
 .znplug4 {
     text-align: left;
@@ -139,28 +170,32 @@ body {
 }
 .znfleche {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 .znplug4 img {
     text-align: right;
 }
+.menufin {
+    text-align: left;
+    padding: 20px;
+}
 .pl4a {
     text-align: left;
-    font-size: 18pt;
-    font-weight: bolder;
+    font-size: 16pt;
+    font-weight: normal;
     color: #a4286a;
     max-width: 22%;
     text-decoration: none;
 }
 .znplug {
     font-size: 12pt;
-    text-align: center;
+    text-align: left;
     display: inline-block;
     width  :20%;
-    min-width: 250px;
+    min-width: 180px;
 }
 .lia {
-    font-size: 16pt;
+    font-size: 12pt;
     color: #a4286a;
     text-decoration: none;
 }
@@ -174,7 +209,7 @@ body {
     padding: 30px;
 }
 .section1 a {
-    font-size: 30pt;
+    font-size: 22pt;
     color: #a4286a;
     text-decoration: none;
 }
@@ -182,23 +217,24 @@ body {
     text-decoration: underline;
 }
 .section1 h1 {
-    font-size: 30pt;
+    font-size: 12pt;
+    font-weight: normal;
 }
 .Articles {
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: left;
     font-size: x-large;
 }
 .znarticle a {
-    font-size: 20pt;
+    font-size: 16pt;
     color: #a4286a;
     text-decoration: none;
 }
 .znarticle p {
-    font-size: 16pt;
+    font-size: 12pt;
 }
 .znarticle a:hover {
     text-decoration: underline;
@@ -209,45 +245,90 @@ body {
     height: calc(95% - 131px);
 }
 .imgzn {
+    width: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
+    top:35px;
+}
+.imgzn img {
+    width: 100%;
+    outline: none;
 }
 .znarticle {
+    display: block;
     background-color: white;
     padding-top: 5px;
-    border: solid white 2px;
-    border-style: groove;
+    border: solid lightgray 1px;
     border-radius: 6px;
-    max-width: 250px;
+    width: 22%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: lightgray 4px 4px 4px;
 }
 .lookfor form {
     width: 100%;
+    align-self: center;
+    text-align: center;
 }
 .lookfor {
     display: inline-flex;
     width:100%;
-    padding: 30px;  
+    padding: 30px;
     background-color: whitesmoke;
+    height: 100px;
 }
 #lookfor2 {
-    font-size: 22pt;
-    border: outset silver 4px;
-    width: 50%;
-    padding: 5px;
+    font-size: 16pt;
+    /*border: outset silver 4px;*/
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px lightgrey;
+    width: 80%;
+    padding: 8px;
     color: lightslategray;
 }
+.btcssPost {
+    display: inline-flex;
+    background-color: #a4286a;;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
 .hero {
-    background-image: url("./Images/hero.webp");
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    /*background-image: url("./Images/hero.webp");
     /*background-size: contain;*/
-    background-clip: padding-box;
+    /*background-clip: padding-box;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+}
+.divimghero {
+    display: flex;
+    height: calc(480px/2);
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    object-position: center;
+    overflow-x: hidden;
+}
+.imghero {
+    display: block;
+    width: calc(2424px / 2);
+    height: calc(480px / 2);
 }
 .navhero {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 300px;
-    margin-bottom: 40px;
+    /*padding-top: 300px;*/
+    margin-bottom: 10px;
+    position: relative;
+    top: -60px;
 }
 .choixhero {
     background-color: white;
@@ -255,20 +336,22 @@ body {
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    border: solid white 2px;
-    border-style: groove;
+    border: solid gray 1px;
+    border-style: solid;
     border-radius: 6px;
-    width: 25%;
+    box-shadow: 2px 2px 4px grey;
+    width: 30%;
     text-align: left;
     font-size: x-large;
 }
 .choixhero p {
     margin:10px;
+    font-size: 12pt;
 }
 .bouton {
-    border: solid white 2px;
-    border-style: groove;
+    border: solid lightgrey 1px;
     border-radius: 6px;
+    box-shadow: 2px 2px 2px lightgrey;
     padding: 10px;
 }
 #bt1 {
@@ -276,44 +359,85 @@ body {
     color: black;
 }
 #bt2 {
-    background-color: purple;
+    background-color: #a4286a;
     color: white;
 }
 #bt3 {
-    background-color: purple;
+    background-color: #a4286a;
     color: white;
 }
+
+/* Gestion de l'entête Titre + promotion + NAV bouton */
 .tete {
     display:flex;
     flex-direction: row;
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
+/* entête Image Yoast */
 .imgtete {
-    width:35%;
+    width:50%;
+    padding-left: 40px ;
+    height: auto;
 }
+/* entête Menu droite */
 .ultete {
     display:inline-block;
-    width:65%;
+    width:75%;
     object-position: right;
+    margin-right: 10px;
 }
 .ultete ul {
     /*border: solid red 1px;*/
     text-align: right;
+    padding-right: 10px;
+    margin: 5px;
+    color: #a4286a;
 }
 .ultete ul li {
     /*display: inline-flex;*/
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 20%;
-    justify-content: flex-start;
+    justify-content: flex-end;
+}
+#monnaie {
+    color: #a4286a;
+    border: none;
+}
+.SansBurger i, select {
+    cursor: pointer;
+}
+.AvecBurger {
+    padding-top: 5px;
+}
+.AvecBurger li {
+    color: white;
+    font-size: 18pt;
 }
 .ultete form {
     display: inline-block;
     width: 100%;
     text-align: right;
+    height: auto;
     /*border: solid red 1px;*/
 }
+.btnSearch1 {
+    background-color: #a4286a;
+    border-color:#a4286a;
+    font-size: 12pt;
+    padding: 5px;
+}
+.btnSearch1 i {
+    color: white;
+}
+#lookfor1 {
+    width: 60%;
+    border: 2px solid lightgray;
+    font-size: 12pt;
+    padding: 5px;
+}
+/* Entête Promotion (s'il y en a) */
 .promotion {
     border: solid black 1px;
     height: 30px;
@@ -323,6 +447,7 @@ body {
     padding: 6px;
     margin: 0;
 }
+/* Entête : navigation */
 .btcss {
     display: flex;
     width: 100%;
@@ -334,27 +459,9 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: x-large;
+    font-size: 14pt;
     cursor: pointer;
     transition-duration: 0.1s;
-}
-.btcssPost {
-    display: inline-flex;
-    width: 30%;
-    background-color: #a4286a;;
-    /*border-style: ridge;*/
-    color: #a4286a;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: x-large;
-    cursor: pointer;
-    font-size: 23pt;
-    transition-duration: 0.1s;
-    background-image: url(./Images/LoupeTxt.PNG);
-    background-repeat: no-repeat;
 }
 .btcss:hover {
     background-color: purple;
@@ -364,27 +471,13 @@ body {
 .menu1 {
     width: 100%;
 }
-.btcss1 {
-    background-color: seagreen;
-}
-.btcss2 {
-    background-color: royalblue;
-}
-.btcss3 {
-    background-color: midnightblue;
-}
-.btcss4 {
-    background-color: crimson;
-}
-.btcss5 {
-    background-color: rgb(76, 19, 83);
-}
-.btcss6 {
-    background-color: limegreen;
-}
-.btcss7 {
-    background-color: darkorange;
-}
+.btcss1 {background-color: seagreen;}
+.btcss2 {background-color: royalblue;}
+.btcss3 {background-color: midnightblue;}
+.btcss4 {background-color: crimson;}
+.btcss5 {background-color: rgb(76, 19, 83);}
+.btcss6 {background-color: limegreen;}
+.btcss7 {background-color: darkorange;}
 
 /* Téléphone */
 @media screen and (max-width: 640px) {
@@ -422,10 +515,10 @@ body {
     }
     /*----- zone Main / Hero ----------*/
     .hero {
-        background-image: url(./Images/Hero.png);
+        /*background-image: url(./Images/Hero.png);
         background-position: top;
         background-clip: border-box;
-        background-size: contain;
+        background-size: contain;*/
     }
     .navhero {
         padding-top: 120px;
@@ -449,13 +542,16 @@ body {
     }
     #lookfor2 {
         font-size: 12pt;
-        width: 75%;
+        width: 60%;
     }
     .btcssPost {
-        background-image: url(./Images/Loupe.PNG);
+        display: inline-flex;
+        background-color: #a4286a;;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
         font-size: 12pt;
-        background-size: contain;
-        width: 10%;
     }
     /*----- Section 1 --------*/
     .section1 a {
@@ -596,10 +692,10 @@ body {
     }
     /*----- zone Main / Hero ----------*/
     .hero {
-        background-image: url(./Images/Hero.png);
+        /*background-image: url(./Images/Hero.png);
         background-position: top;
         background-clip: border-box;
-        background-size: contain;
+        background-size: contain;*/
     }
     .navhero {
         padding-top: 180px 20px 20px 20px;
@@ -625,13 +721,16 @@ body {
     }
     #lookfor2 {
         font-size: 12pt;
-        width: 85%;
+        width: 70%;
     }
     .btcssPost {
-        background-image: url(./Images/Loupe.PNG);
+        display: inline-flex;
+        background-color: #a4286a;;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
         font-size: 12pt;
-        background-size: contain;
-        width: 5%;
     }
     /*----- Section 1 --------*/
     .section1 a {
@@ -739,6 +838,7 @@ body {
     }
     .SansBurger li {
         display: inline-flex;
+        justify-content: space-around;
     }
     .AvecBurger {
         display: none;
